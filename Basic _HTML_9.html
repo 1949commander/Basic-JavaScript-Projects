@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en-US">
 
     <head>
-        <title> Timer </title>
+        <title> Slide Show </title>
         <script src="./JS/Basic_JavaScript_9.js"></script>
+        <link rel="stylesheet" href="./css/Basic_CSS_1.css">
     </head>
 <html>
 
     <body>
-        <h1>Alarm</h1>
-        <p>How many seconds would you like to set your alarm for?</p>
-        <input id="seconds" value="" />
-        <button onclick="countdown()">Click here</button>
-        <p id="timer"></p>
+<!-- Slideshow container    -->
+        <div class="slideshow-container">
+    <!-- Full width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/IMG_1.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Red Packard</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/IMG_2.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Silver Packard</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/IMG_3.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Dark Green Packard</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/IMG_4.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Light Green Packard</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/IMG_5.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Black Packard</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/IMG_6.JPG" alt="Packard" style="max-width: fit-content;">
+                <div class="text">Cream Packard</div>
+            </div>
+
+        <!-- Next and Previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"> </span>
+        <span class="dot" onclick="currentSlide(2)"> </span>
+        <span class="dot" onclick="currentSlide(3)"> </span>
+        <span class="dot" onclick="currentSlide(4)"> </span>
+        <span class="dot" onclick="currentSlide(5)"> </span>
+        <span class="dot" onclick="currentSlide(6)"> </span>
+
+    </div>
 
     </body>
 
