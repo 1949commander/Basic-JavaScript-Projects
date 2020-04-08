@@ -65,8 +65,9 @@ let car = {
 };
 document.getElementById("Car_Object").innerHTML = car.description(); */
 
+
 var text = "";
-var i;
+var i; // Creates variable i
 for (i = 0; i < 10; i++) {
   if (i === 3) { break; }
   text += "The number is " + i + "<br>";
