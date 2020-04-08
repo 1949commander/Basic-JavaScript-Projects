@@ -47,9 +47,36 @@ function test_Function() {
     document.write("<br>" + X)
 } */
 
-var x = myFunction(5, 3); 
+/* var x = myFunction(5, 3); 
 
 function myFunction(a, b) {
   return a * b;   
 }  
-document.getElementById("demo").innerHTML = x;
+document.getElementById("demo").innerHTML = x; */
+/* 
+let car = {
+    make: "Dodge ",
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description : function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_Object").innerHTML = car.description(); */
+
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+var text = "";
+var i;
+for (i = 0; i < 12; i++) {
+  if (i === 5) { continue; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo_2").innerHTML = text;
