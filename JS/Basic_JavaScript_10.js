@@ -1,4 +1,4 @@
-/* function Call_Loop() {
+function Call_Loop() {
     var text = "";
     var i = 0;
     while (i <= 15) {
@@ -45,7 +45,7 @@ function test_Function() {
         document.write("<br>" + X);
     }
     document.write("<br>" + X)
-} */
+}
 
 /* var x = myFunction(5, 3); 
 
@@ -66,7 +66,7 @@ let car = {
 document.getElementById("Car_Object").innerHTML = car.description(); */
 
 
-var text = "";
+/* var text = "";
 var i; // Creates variable i
 for (i = 0; i < 10; i++) {
   if (i === 3) { break; }
@@ -80,4 +80,4 @@ for (i = 0; i < 12; i++) {
   if (i === 5) { continue; }
   text += "The number is " + i + "<br>";
 }
-document.getElementById("demo_2").innerHTML = text;
+document.getElementById("demo_2").innerHTML = text; */
